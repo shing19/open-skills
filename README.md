@@ -1,6 +1,6 @@
 # Open Skills
 
-欢迎来到 Open Skills。这里收录可以直接安装和使用的 Agent Skills。
+欢迎来到 Open Skills。这里公开分享可以直接安装和使用的非商业 Agent Skills。
 
 ## Skill 目录
 
@@ -46,4 +46,6 @@ open-skills/skills/orchestrate-subagents/
 
 ## 许可证
 
-本仓库内容采用 [MIT License](LICENSE)。
+本仓库内容采用 [PolyForm Noncommercial License 1.0.0](LICENSE)：允许个人学习、研究、实验及其他非商业用途，但不授权商业使用。
+
+由于该许可证限制商业用途，本仓库属于源码可见项目，不属于 OSI 定义下的开源软件；如需商业授权，请联系仓库维护者。
