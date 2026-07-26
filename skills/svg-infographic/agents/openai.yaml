@@ -1,0 +1,4 @@
+interface:
+  display_name: "SVG Infographic"
+  short_description: "Create clean, copyable SVG infographics"
+  default_prompt: "Use $svg-infographic to turn the supplied claim or explanation into a hand-authored SVG infographic with selectable text, a clear reading order, and rendered visual QA."
