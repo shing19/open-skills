@@ -7,10 +7,11 @@
 | Skill | 用途 | 状态 |
 | --- | --- | --- |
 | [orchestrate-subagents](skills/orchestrate-subagents/SKILL.md) | 让主 Agent 保持干净的控制上下文，通过执行文档和有边界的 sub Agent 完成长程任务 | 可用 |
+| [svg-infographic](skills/svg-infographic/SKILL.md) | 把论点、流程、比较和系统关系制作成文字可复制、布局可控的纯代码 SVG 信息图 | 可用 |
 
 ## 安装
 
-将需要的 Skill 目录复制或链接到你的 Agent 所支持的 Skills 目录中。不同宿主的目录和 sub Agent 能力并不相同，请先阅读该 Skill 的 `SKILL.md` 与 `references/setup.md`。
+将需要的 Skill 目录复制或链接到你的 Agent 所支持的 Skills 目录中。不同宿主的目录和能力并不相同，请先阅读对应的 `SKILL.md` 和其中引用的说明。
 
 以 `orchestrate-subagents` 为例：
 
@@ -27,6 +28,8 @@ open-skills/skills/orchestrate-subagents/
 
 模型名称和可用能力取决于你的 Agent 平台；Skill 不要求使用某个固定模型。
 
+`svg-infographic` 不依赖固定模型或远程生图服务。宿主如果能够写文件并预览 SVG，就可以完成核心流程；如果不能截图或渲染，仍可输出 SVG 源码，但应明确说明尚未完成视觉验收。
+
 ## 最小用法
 
 ```text
@@ -34,6 +37,13 @@ open-skills/skills/orchestrate-subagents/
 ```
 
 如果目标、权限、交付物或验收标准还不清楚，主 Agent 会先整理执行简报并向你确认，不会直接派发。
+
+制作 SVG 信息图：
+
+```text
+使用 svg-infographic，把下面这段关于“反馈闭环”的说明做成一张中文信息图。
+要求透明背景、文字可复制，并同时给我 SVG 源文件和 HTML 预览。
+```
 
 ## 使用提示
 
