@@ -1,0 +1,4 @@
+interface:
+  display_name: "Orchestrate Subagents"
+  short_description: "Run long tasks through documented delegation and acceptance"
+  default_prompt: "Use $orchestrate-subagents to turn my confirmed task into bounded subagent work while you keep the execution record, critical path, and final acceptance."
